@@ -433,6 +433,11 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=lyTUdnJAAdiHmOykRGhtbXecWikrc
             let explanation = data.explanation;
             let url = data.url;
 
+            // We need to make sure that the image is not a video
+            if (url.includes('youtube')) {
+                url = 'img/nasa/nasa.jpg';
+            }
+
             document.getElementById('nasa-image').src = url;
             document.getElementById('nasa-title').innerHTML = title;
             document.getElementById('nasa-explanation').innerHTML = explanation;
