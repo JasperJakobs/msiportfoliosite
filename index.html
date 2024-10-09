@@ -9,18 +9,11 @@
 	<!-- Include the Alpine library on your page -->
 	<script src="https://unpkg.com/alpinejs" defer></script>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body class="h-screen w-screen">
-<div id="weather" class="absolute w-64 flex flex-row top-8 left-8 animate__animated animate__fadeIn animate__delay-2s">
-	<img src="img/weather/wi-alien.svg" alt="Weather-icon" id="weather-icon" class="h-16 filter-white">
-	<div class="flex flex-col justify-between">
-		<span class="font-sans text-white text-3xl font-bold"><span id="weather-temp">%temp%</span><sup class=" ">°c</sup></span>
-		<span class="font-sans text-white" id="weather-description">%description%</span>
-	</div>
-</div>
+
 <div class="px-3 lg:px-6 h-screen w-screen">
 	<div class="mx-auto">
 		<div class="container px-6 py-32 mx-auto md:text-center md:px-4">
@@ -37,22 +30,6 @@
 					<span class="text bg-clip-text text-transparent">START HIER</span>
 					<span class="shimmer"></span>
 				</a>
-		</div>
-	</div>
-</div>
-<div class="p-32 bg-white" id="two">
-	<div class="p-4 w-[60vw] mx-auto">
-		<h1 class="text-center font-sans text-4xl font-bold uppercase mb-12">NASA picture of the day</h1>
-		<div class="flex flex-row gap-4">
-			<div class="w-[30vw]">
-				<div class="frame">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/71829/mona-lisa.jpg" id="nasa-image" alt="nasa picture of the day" />
-				</div>
-			</div>
-			<div class="w-[30vw]">
-				<h2 class="text-2xl font-bold mb-4" id="nasa-title">%title%</h2>
-				<p id="nasa-explanation">%description%</p>
-			</div>
 		</div>
 	</div>
 </div>

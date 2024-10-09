@@ -414,7 +414,7 @@ fetch('https://api.geoapify.com/v1/ipinfo?apiKey=334ef1186a7a4675b0ab892c5afd426
                         }
 
 
-                        document.getElementById('weather-icon').src = `img/weather/${icon}.svg`;
+                        document.getElementById('weather-icon').src = `../img/weather/${icon}.svg`;
 
                 })
                 .catch(err => console.log(err));
